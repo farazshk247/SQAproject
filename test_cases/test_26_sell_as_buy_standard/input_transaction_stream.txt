@@ -1,0 +1,6 @@
+login
+buyer1
+sell
+Celeste
+12.50
+logout

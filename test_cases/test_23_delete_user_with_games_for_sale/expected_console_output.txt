@@ -1,0 +1,4 @@
+Username: 
+Login successful. Welcome admin1 (admin).
+User 'seller1' deleted successfully. Associated games for sale removed.
+Logged out. Daily transaction file written.

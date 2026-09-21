@@ -1,0 +1,6 @@
+login
+admin1
+addcredit
+50.00
+ghostuser
+logout

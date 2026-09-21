@@ -1,0 +1,6 @@
+Username: 
+Login successful. Welcome buyer1 (buy-standard).
+Available games:
+  Stardew_Valley - seller1 - $15.00
+  Hollow_Knight - seller1 - $10.00
+Logged out. Daily transaction file written.

@@ -1,0 +1,6 @@
+login
+fulluser1
+create
+newuser4
+FS
+logout

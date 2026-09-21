@@ -1,0 +1,4 @@
+Username: 
+Login successful. Welcome seller1 (sell-standard).
+Game 'Celeste' listed for sale at $12.50.
+Logged out. Daily transaction file written.

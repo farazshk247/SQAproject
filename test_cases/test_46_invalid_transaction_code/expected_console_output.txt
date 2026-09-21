@@ -1,0 +1,4 @@
+Username: 
+Login successful. Welcome admin1 (admin).
+Error: 'frobnicate' is not a recognized transaction code.
+Logged out. Daily transaction file written.

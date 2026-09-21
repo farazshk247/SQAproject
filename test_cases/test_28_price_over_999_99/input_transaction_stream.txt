@@ -1,0 +1,6 @@
+login
+seller1
+sell
+ExpensiveGame
+1500.00
+logout

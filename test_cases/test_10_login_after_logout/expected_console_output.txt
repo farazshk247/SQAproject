@@ -1,0 +1,6 @@
+Username: 
+Login successful. Welcome admin1 (admin).
+Logged out. Daily transaction file written.
+Username: 
+Login successful. Welcome fulluser1 (full-standard).
+Logged out. Daily transaction file written.

@@ -1,0 +1,5 @@
+login
+admin1
+delete
+admin1
+logout

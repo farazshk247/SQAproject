@@ -1,0 +1,1 @@
+input_game_collection.txt pre-seeded to show buyer1 already owns Stardew_Valley.

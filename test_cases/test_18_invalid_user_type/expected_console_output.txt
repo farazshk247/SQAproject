@@ -1,0 +1,4 @@
+Username: 
+Login successful. Welcome admin1 (admin).
+Error: invalid user type 'XX'.
+Logged out. Daily transaction file written.

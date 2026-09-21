@@ -1,0 +1,5 @@
+Username: 
+Login successful. Welcome buyer1 (buy-standard).
+Added $600.00 credit to your account.
+Error: cannot add more than $1000.00 of credit in a single session (600.00 already added this session).
+Logged out. Daily transaction file written.

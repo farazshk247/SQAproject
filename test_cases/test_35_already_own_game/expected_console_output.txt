@@ -1,0 +1,4 @@
+Username: 
+Login successful. Welcome buyer1 (buy-standard).
+Error: you already own 'Stardew_Valley'.
+Logged out. Daily transaction file written.

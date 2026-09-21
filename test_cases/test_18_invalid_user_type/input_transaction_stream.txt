@@ -1,0 +1,6 @@
+login
+admin1
+create
+newuser5
+XX
+logout

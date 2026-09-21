@@ -1,0 +1,1 @@
+Second 'login' attempt while admin1's session is active must be rejected; session remains admin1's, and the eventual logout closes admin1's session.

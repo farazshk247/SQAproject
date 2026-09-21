@@ -1,0 +1,4 @@
+Username: 
+Login successful. Welcome admin1 (admin).
+Error: buyer 'ghostbuyer' does not exist.
+Logged out. Daily transaction file written.

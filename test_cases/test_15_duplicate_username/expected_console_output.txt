@@ -1,0 +1,4 @@
+Username: 
+Login successful. Welcome admin1 (admin).
+Error: username 'admin1' already exists.
+Logged out. Daily transaction file written.

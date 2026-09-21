@@ -1,0 +1,4 @@
+Username: 
+Login successful. Welcome buyer1 (buy-standard).
+No games currently available for sale.
+Logged out. Daily transaction file written.

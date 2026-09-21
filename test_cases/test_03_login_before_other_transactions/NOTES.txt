@@ -1,0 +1,1 @@
+The leading 'sell' transaction is issued before any login and must be rejected and not recorded; the subsequent login/logout should proceed normally.

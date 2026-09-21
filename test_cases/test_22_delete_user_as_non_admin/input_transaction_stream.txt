@@ -1,0 +1,5 @@
+login
+fulluser1
+delete
+buyer1
+logout

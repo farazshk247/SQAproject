@@ -1,0 +1,1 @@
+'list' is NOT one of the 8 transaction codes defined in the project handout excerpt provided (login/logout/create/delete/sell/buy/refund/addcredit). It is not part of the documented Daily Transaction File format either, so it is treated here as a read-only, unlogged transaction. Confirm this behavior with your TA/course Slack before relying on it.

@@ -1,0 +1,1 @@
+A game listed via 'sell' only appears in the Available Games File after the overnight Back End batch run. A second Front End session on the same day still reads the old input_available_games.txt, so 'Celeste' is correctly not purchasable yet.

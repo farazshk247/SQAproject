@@ -1,0 +1,1 @@
+Session cumulative total is tracked across multiple addcredit transactions; 600.00 + 500.00 = 1100.00 exceeds the $1000.00 session cap, so only the first is recorded.

@@ -1,0 +1,5 @@
+admin1          AA 001000.00
+fulluser1       FS 000500.00
+buyer1          BS 000300.00
+seller1         SS 000200.00
+END                         

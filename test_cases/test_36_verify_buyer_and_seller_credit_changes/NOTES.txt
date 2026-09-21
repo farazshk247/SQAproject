@@ -1,0 +1,3 @@
+Credit balances themselves are only materialized in the Current User Accounts File by the Back End (Phase 4/5), not by the Front End. This case's Daily Transaction File record is what the Back End will use to apply: buyer1 300.00 -> 285.00, seller1 200.00 -> 215.00. Expected post-Back-End account lines:
+  buyer1          BS 000285.00
+  seller1         SS 000215.00

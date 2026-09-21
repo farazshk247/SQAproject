@@ -1,0 +1,6 @@
+login
+admin1
+create
+ssuser1
+SS
+logout
