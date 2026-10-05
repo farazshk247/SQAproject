@@ -1,8 +1,7 @@
-# CSCI 3060U — Phase 1 Test Plan
+# CSCI 3060U Phase 1 Test Plan
 
-**Project:** Digital Games Distribution System — Front End
-**Team:** _[fill in team name and member names before submitting]_
-
+**Project:** Digital Games Distribution System Front End
+**Team:** Sabre Inc.
 ## 1. Overview
 
 This document describes how the 50 test cases in `docs/Test_Case_Table.md` are
@@ -370,16 +369,16 @@ results/
     `-- ... (same structure, from a later run)
 ```
 
-- **`summary.txt`** — one line per test case (`test_NN_name  PASS|FAIL`) plus a
+- **`summary.txt`** one line per test case (`test_NN_name  PASS|FAIL`) plus a
   final pass/fail count. This is the file to read first for a quick report,
   and the file to `diff` between two `results/run_*/` folders to see exactly
   which test cases changed status between runs (e.g. after fixing a bug).
-- **`actual_console_output.txt` / `actual_daily_transaction_file.txt`** — raw
+- **`actual_console_output.txt` / `actual_daily_transaction_file.txt`** raw
   captured output from that run, kept for archival/debugging even on a pass.
-- **`diff_console.txt` / `diff_daily_transaction.txt`** — unified diff
+- **`diff_console.txt` / `diff_daily_transaction.txt`** unified diff
   (`diff -u` on Linux/macOS, `fc` output on Windows) against the expected
   files; empty on a pass, non-empty and human-readable on a failure.
-- **`RESULT.txt`** — single word, `PASS` or `FAIL`, for easy scripting/grepping.
+- **`RESULT.txt`** single word, `PASS` or `FAIL`, for easy scripting/grepping.
 
 To compare two runs at a glance:
 ```

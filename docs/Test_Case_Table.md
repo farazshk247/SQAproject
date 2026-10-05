@@ -1,7 +1,7 @@
-# CSCI 3060U — Phase 1 Test Case Table
+# CSCI 3060U Phase 1 Test Case Table
 
-**Project:** Digital Games Distribution System — Front End
-**Team:** _[fill in team name and member names before submitting]_
+**Project:** Digital Games Distribution System Front End
+**Team:** Sabre Inc.
 
 Each row corresponds to one folder under `test_cases/`. "Intention" states what
 requirement or behavior the test case is meant to verify, referencing the
@@ -52,10 +52,10 @@ transaction codes and constraints from the project handout.
 | 41 | Add Credit | Add credit to nonexistent user | In admin mode, adding credit to a username that does not exist is rejected. |
 | 42 | Add Credit | Add more than $1,000 in one session | A single `addcredit` request exceeding the $1,000.00 session cap is rejected. |
 | 43 | Add Credit | Multiple additions over $1,000 | The $1,000.00 session cap is enforced cumulatively across multiple `addcredit` transactions in the same session, not just per-transaction. |
-| 44 | LIST | List available games | Listing available games for sale displays the current inventory (see `NOTES.txt` — `list` is not one of the 8 transaction codes defined in the provided handout excerpt). |
+| 44 | LIST | List available games | Listing available games for sale displays the current inventory (see `NOTES.txt`,`list` is not one of the 8 transaction codes defined in the provided handout excerpt). |
 | 45 | LIST | LIST with no games for sale | Listing available games when the Available Games File contains only the `END` sentinel reports that no games are available. |
 | 46 | General | Invalid transaction code | An unrecognized transaction code is reported as an error and does not crash the program. |
 | 47 | General | Invalid input | Non-numeric input supplied where a numeric field (e.g. price) is expected is rejected gracefully. |
 | 48 | General | Program handles bad input without crashing | Blank lines and garbage tokens interleaved with valid transactions are reported and skipped without crashing or corrupting subsequent transaction processing. |
-| 49 | Daily Transaction File | Verify transaction output format | A single session exercising every transaction code (`00`–`06`) is used to check that every Daily Transaction File record is formatted, padded, and delimited exactly per spec. |
+| 49 | Daily Transaction File | Verify transaction output format | A single session exercising every transaction code (`00`,`06`) is used to check that every Daily Transaction File record is formatted, padded, and delimited exactly per spec. |
 | 50 | Daily Transaction File | Verify end-of-session transaction | Checks the exact byte layout of the terminating `00` (end-of-session) record written at logout. |

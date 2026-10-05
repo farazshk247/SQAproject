@@ -1,8 +1,8 @@
-# CSCI 3060U – Phase 1 AI Usage History
+# CSCI 3060U Phase 1 AI Usage History
 
-**Project:** Digital Games Distribution System – Front End Requirements  
-**Course:** CSCI 3060U – Fall 2026  
-**Phase:** Phase 1 – Front End Requirements  
+**Project:** Digital Games Distribution System Front End Requirements  
+**Course:** CSCI 3060U Fall 2026  
+**Phase:** Phase 1 Front End Requirements  
 **Team:** Sabee Inc.
 **Team Members:**
 Chris Ibrahim
@@ -24,7 +24,7 @@ The team reviewed the suggestions provided by Claude and made the final decision
 
 ## Prompt History
 
-### Prompt 1 – Project Requirements
+### Prompt 1 Project Requirements
 
 **Prompt:**
 
@@ -34,7 +34,7 @@ The team reviewed the suggestions provided by Claude and made the final decision
 
 Claude helped clarify the project requirements and what was expected for the Phase 1 submission.
 
-### Prompt 2 – Test Case Ideas
+### Prompt 2 Test Case Ideas
 
 **Prompt:**
 
@@ -44,7 +44,7 @@ Claude helped clarify the project requirements and what was expected for the Pha
 
 Claude was used to brainstorm possible valid, invalid, and boundary test cases. The team decided which test cases were relevant to the project requirements.
 
-### Prompt 3 – Organizing Test Cases
+### Prompt 3 Organizing Test Cases
 
 **Prompt:**
 
@@ -54,7 +54,7 @@ Claude was used to brainstorm possible valid, invalid, and boundary test cases. 
 
 Claude provided ideas for keeping the test cases organized and making the test files easier to understand and review.
 
-### Prompt 4 – Checking Test Coverage
+### Prompt 4 Checking Test Coverage
 
 **Prompt:**
 
@@ -64,7 +64,7 @@ Claude provided ideas for keeping the test cases organized and making the test f
 
 Claude suggested checking each requirement against the test cases to make sure the important functionality and constraints were covered.
 
-### Prompt 5 – Invalid and Boundary Inputs
+### Prompt 5 Invalid and Boundary Inputs
 
 **Prompt:**
 
@@ -74,7 +74,7 @@ Claude suggested checking each requirement against the test cases to make sure t
 
 Claude helped brainstorm possible edge cases such as invalid values, duplicate information, missing information, and values outside the allowed limits.
 
-### Prompt 6 – Test Documentation
+### Prompt 6 Test Documentation
 
 **Prompt:**
 
@@ -84,7 +84,7 @@ Claude helped brainstorm possible edge cases such as invalid values, duplicate i
 
 Claude suggested including the purpose of the test, the input, the expected result, and the requirement being tested.
 
-### Prompt 7 – Final Review
+### Prompt 7 Final Review
 
 **Prompt:**
 
