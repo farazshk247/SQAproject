@@ -1,5 +1,0 @@
-login
-admin1
-delete
-buyer1
-logout

@@ -1,1 +1,0 @@
-'Deactivate' is not a transaction code defined in the project spec handout (only login/logout/create/delete/sell/buy/refund/addcredit are defined). This case is built as an additional 'delete' scenario -- confirm with your TA whether a distinct deactivate (soft-delete) transaction is actually expected.
