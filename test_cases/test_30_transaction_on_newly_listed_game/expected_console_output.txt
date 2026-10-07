@@ -1,8 +1,0 @@
-Username: 
-Login successful. Welcome seller1 (sell-standard).
-Game 'Celeste' listed for sale at $12.50.
-Logged out. Daily transaction file written.
-Username: 
-Login successful. Welcome buyer1 (buy-standard).
-Error: game 'Celeste' does not exist.
-Logged out. Daily transaction file written.

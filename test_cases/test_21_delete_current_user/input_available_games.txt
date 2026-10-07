@@ -1,3 +1,0 @@
-Stardew_Valley            seller1         015.00
-Hollow_Knight             seller1         010.00
-END                                       000000

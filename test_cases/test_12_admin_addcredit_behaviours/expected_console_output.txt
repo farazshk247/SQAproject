@@ -1,0 +1,5 @@
+Username: 
+Login successful. Welcome admin1 (admin).
+Added $50.00 credit to buyer1's account.
+Error: user 'ghostuser' does not exist.
+Logged out. Daily transaction file written.

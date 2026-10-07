@@ -1,0 +1,11 @@
+Username: 
+Login successful. Welcome seller1 (sell-standard).
+Game 'Celeste' listed for sale at $12.50.
+Error: game name exceeds 25 characters.
+Error: price exceeds maximum of $999.99.
+Error: game 'Stardew_Valley' already exists.
+Logged out. Daily transaction file written.
+Username: 
+Login successful. Welcome buyer1 (buy-standard).
+Error: insufficient privileges for 'sell'.
+Logged out. Daily transaction file written.

@@ -1,2 +1,0 @@
-Username: 
-Error: invalid username. Login failed.

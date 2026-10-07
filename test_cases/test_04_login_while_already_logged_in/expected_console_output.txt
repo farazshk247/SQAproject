@@ -1,4 +1,0 @@
-Username: 
-Login successful. Welcome admin1 (admin).
-Error: already logged in. Login ignored.
-Logged out. Daily transaction file written.

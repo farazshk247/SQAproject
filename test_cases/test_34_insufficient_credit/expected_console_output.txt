@@ -1,4 +1,0 @@
-Username: 
-Login successful. Welcome poorbuyer (buy-standard).
-Error: insufficient credit to purchase 'Stardew_Valley' ($15.00).
-Logged out. Daily transaction file written.

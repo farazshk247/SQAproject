@@ -1,1 +1,0 @@
-No user named 'ghostuser' exists in input_current_user_accounts.txt. Front End should reject the login and remain awaiting a new transaction code.

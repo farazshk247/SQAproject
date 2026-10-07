@@ -1,4 +1,0 @@
-Username: 
-Login successful. Welcome ssuser1 (sell-standard).
-Error: insufficient privileges for 'buy'.
-Logged out. Daily transaction file written.

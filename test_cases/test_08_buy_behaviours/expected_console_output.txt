@@ -1,0 +1,14 @@
+Username: 
+Login successful. Welcome buyer1 (buy-standard).
+Purchased 'Hollow_Knight' from seller1 for $10.00.
+Error: game 'NoSuchGame' does not exist.
+Error: you already own 'Stardew_Valley'.
+Logged out. Daily transaction file written.
+Username: 
+Login successful. Welcome poorbuyer (buy-standard).
+Error: insufficient credit to purchase 'Stardew_Valley' ($15.00).
+Logged out. Daily transaction file written.
+Username: 
+Login successful. Welcome seller1 (sell-standard).
+Error: insufficient privileges for 'buy'.
+Logged out. Daily transaction file written.

@@ -1,5 +1,0 @@
-login
-admin1
-delete
-ghostuser
-logout

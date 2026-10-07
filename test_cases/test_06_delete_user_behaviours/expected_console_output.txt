@@ -1,0 +1,8 @@
+Username: 
+Login successful. Welcome admin1 (admin).
+User 'fulluser1' deleted successfully.
+Error: user 'ghostuser' does not exist.
+Error: cannot delete the currently logged in user.
+User 'seller1' deleted successfully. Associated games for sale removed.
+Error: game 'Stardew_Valley' does not exist.
+Logged out. Daily transaction file written.

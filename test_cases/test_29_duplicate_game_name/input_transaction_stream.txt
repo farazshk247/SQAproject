@@ -1,6 +1,0 @@
-login
-seller1
-sell
-Stardew_Valley
-20.00
-logout

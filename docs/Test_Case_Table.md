@@ -1,61 +1,33 @@
-# CSCI 3060U Phase 1 Test Case Table
+# CSCI 3060U Final Test Case Table
 
 **Project:** Digital Games Distribution System Front End
+
 **Team:** Sabre Inc.
 
-Each row corresponds to one folder under `test_cases/`. "Intention" states what
-requirement or behavior the test case is meant to verify, referencing the
-transaction codes and constraints from the project handout.
+The original, highly granular suite was consolidated into 16 independently runnable test directories. Related valid, invalid, boundary, and permission scenarios are combined where they share compatible input state. Each row below corresponds to one directory under `test_cases/`.
 
-| # | Category | Test Case | Intention |
+| # | Test directory | Purpose | Main behaviours and constraints covered |
 |---|---|---|---|
-| 1 | Login | Valid login | An existing user can log in with a correct username and start a session. |
-| 2 | Login | Invalid login | A username not present in the Current User Accounts File is rejected and no session starts. |
-| 3 | Login | Login before other transactions | No transaction other than `login` is accepted before a session has started. |
-| 4 | Login | Login while already logged in | A second `login` is rejected while a session is already active; the first session continues. |
-| 5 | Login | Non-admin login restrictions | After logging in as a non-admin (buy-standard) user, privileged transactions like `create` are rejected. |
-| 6 | Login | Admin login privileges | After logging in as an admin, privileged transactions (e.g. `create`) are accepted. |
-| 7 | Logout | Valid logout | A logged-in user can log out; the session ends and a Daily Transaction File is written. |
-| 8 | Logout | Logout before login | `logout` is rejected when no session is active; no Daily Transaction File is written. |
-| 9 | Logout | Transaction after logout | No transaction other than `login` is accepted after `logout`, until a new session starts. |
-| 10 | Logout | Login after logout | A user can log in again after a prior logout, starting an independent second session. |
-| 11 | Create User | Create full-standard user | Admin can create a new user with full-standard (`FS`) privileges. |
-| 12 | Create User | Create buy-standard user | Admin can create a new user with buy-standard (`BS`) privileges. |
-| 13 | Create User | Create sell-standard user | Admin can create a new user with sell-standard (`SS`) privileges. |
-| 14 | Create User | Create admin user | Admin can create a new user with admin (`AA`) privileges. |
-| 15 | Create User | Duplicate username | Creating a user whose name matches an existing user is rejected. |
-| 16 | Create User | Username over 15 characters | Creating a user whose name exceeds the 15-character limit is rejected. |
-| 17 | Create User | Create user as non-admin | A non-admin user cannot perform the privileged `create` transaction. |
-| 18 | Create User | Invalid user type | Creating a user with a type other than `AA`/`FS`/`BS`/`SS` is rejected. |
-| 19 | Delete User | Delete existing user | Admin can delete an existing user; the deletion is recorded in the Daily Transaction File. |
-| 20 | Delete User | Delete nonexistent user | Deleting a username that does not exist is rejected. |
-| 21 | Delete User | Delete current user | An admin cannot delete the username they are currently logged in as. |
-| 22 | Delete User | Delete user as non-admin | A non-admin user cannot perform the privileged `delete` transaction. |
-| 23 | Delete User | Delete user with games for sale | Deleting a user who has games listed for sale succeeds and cancels further transactions on that inventory. |
-| 24 | Delete User | Deactivate existing user | Exercises the same "remove a user account" path as `delete` (see `NOTES.txt` — "deactivate" is not a separately defined transaction in the handout). |
-| 25 | Sell Game | Valid game sale | A sell-standard (or higher) user can list a new, uniquely-named game at a valid price. |
-| 26 | Sell Game | Sell as buy-standard | A buy-standard user cannot perform the `sell` transaction. |
-| 27 | Sell Game | Game name over 25 characters | Listing a game whose name exceeds the 25-character limit is rejected. |
-| 28 | Sell Game | Price over $999.99 | Listing a game priced above the $999.99 maximum is rejected. |
-| 29 | Sell Game | Duplicate game name | Listing a game whose name matches an already-listed game is rejected. |
-| 30 | Sell Game | Transaction on newly listed game | A game just listed for sale in one session is not yet purchasable in a following session on the same day, since the master Available Games File is only updated by the overnight Back End run. |
-| 31 | Buy Game | Valid purchase | A buy-eligible user can purchase an existing, available game they can afford and don't already own. |
-| 32 | Buy Game | Buy as sell-standard | A sell-standard user cannot perform the `buy` transaction. |
-| 33 | Buy Game | Game does not exist | Buying a game name not present in the Available Games File is rejected. |
-| 34 | Buy Game | Insufficient credit | Buying a game whose price exceeds the buyer's available credit is rejected. |
-| 35 | Buy Game | Already own game | Buying a game already present in the buyer's Game Collection File is rejected. |
-| 36 | Buy Game | Verify buyer and seller credit changes | A valid purchase's recorded transaction correctly reflects the price to be debited from the buyer and credited to the seller (materialized later by the Back End). |
-| 37 | Refund | Valid refund | Admin can transfer a specified credit amount from a seller's balance to a buyer's balance. |
-| 38 | Refund | Refund as non-admin | A non-admin user cannot perform the privileged `refund` transaction. |
-| 39 | Refund | Invalid buyer or seller | A refund naming a buyer or seller that is not a current user is rejected. |
-| 40 | Add Credit | Valid add credit | A standard-account user can add credit to their own account, up to the session limit. |
-| 41 | Add Credit | Add credit to nonexistent user | In admin mode, adding credit to a username that does not exist is rejected. |
-| 42 | Add Credit | Add more than $1,000 in one session | A single `addcredit` request exceeding the $1,000.00 session cap is rejected. |
-| 43 | Add Credit | Multiple additions over $1,000 | The $1,000.00 session cap is enforced cumulatively across multiple `addcredit` transactions in the same session, not just per-transaction. |
-| 44 | LIST | List available games | Listing available games for sale displays the current inventory (see `NOTES.txt`,`list` is not one of the 8 transaction codes defined in the provided handout excerpt). |
-| 45 | LIST | LIST with no games for sale | Listing available games when the Available Games File contains only the `END` sentinel reports that no games are available. |
-| 46 | General | Invalid transaction code | An unrecognized transaction code is reported as an error and does not crash the program. |
-| 47 | General | Invalid input | Non-numeric input supplied where a numeric field (e.g. price) is expected is rejected gracefully. |
-| 48 | General | Program handles bad input without crashing | Blank lines and garbage tokens interleaved with valid transactions are reported and skipped without crashing or corrupting subsequent transaction processing. |
-| 49 | Daily Transaction File | Verify transaction output format | A single session exercising every transaction code (`00`,`06`) is used to check that every Daily Transaction File record is formatted, padded, and delimited exactly per spec. |
-| 50 | Daily Transaction File | Verify end-of-session transaction | Checks the exact byte layout of the terminating `00` (end-of-session) record written at logout. |
+| 1 | `test_01_valid_login_logout` | Verify a normal session lifecycle. | Existing administrator can log in and log out; logout writes the exact `00` end-of-session record. |
+| 2 | `test_02_invalid_session_operations` | Verify invalid session-state handling. | Reject logout and transactions before login, reject an unknown username, reject a second login during an active session, and reject a transaction after logout. Only the successful logout writes `00`. |
+| 3 | `test_03_account_privilege_restrictions` | Verify privileged-operation access. | Administrator can perform `create`; a non-admin is rejected from `create`, `delete`, `refund`, and the assumed `listaccounts` command. Rejected operations create no records. |
+| 4 | `test_04_create_valid_user_types` | Verify valid account creation. | Administrator creates one `FS`, `BS`, `SS`, and `AA` account; each creates a correctly formatted `01` record. |
+| 5 | `test_05_create_invalid_inputs` | Verify invalid account creation. | Reject duplicate username, username longer than 15 characters, and invalid user type; no `01` records are written. |
+| 6 | `test_06_delete_user_behaviours` | Verify valid and invalid deletion. | Delete an existing user, reject nonexistent and currently logged-in users, delete a seller with listed inventory, and reject a later transaction on that cancelled inventory. Only valid deletions write `02`. |
+| 7 | `test_07_sell_behaviours` | Verify selling and its constraints. | Accept a valid sale; reject a buy-standard seller, a game name over 25 characters, a price over `$999.99`, and a duplicate game name. Only the valid sale writes `03`. |
+| 8 | `test_08_buy_behaviours` | Verify buying and its constraints. | Accept a valid purchase; reject a sell-standard buyer, nonexistent game, insufficient credit, and an already-owned game. Only the valid purchase writes `04` with game, seller, buyer, and price. |
+| 9 | `test_09_newly_listed_game_next_session` | Verify the session boundary for new listings. | Reject a transaction on a newly listed game during the listing session, then accept it in the next session. Records are ordered `03`, `00`, `04`, `00`. |
+| 10 | `test_10_refund_behaviours` | Verify refund processing. | Administrator completes a refund and receives rejections for a nonexistent buyer and nonexistent seller. Only the valid refund writes `05`. |
+| 11 | `test_11_standard_addcredit_behaviours` | Verify standard-user credit additions. | Standard user supplies only an amount; reject a single amount over `$1000.00`, accept `$600.00`, and reject a later amount that would exceed the cumulative session limit. |
+| 12 | `test_12_admin_addcredit_behaviours` | Verify administrator-targeted credit additions. | Administrator supplies amount followed by username; accept an existing target and reject a nonexistent target. Only the valid addition writes `06`. |
+| 13 | `test_13_list_available_games` | Cover the professor-added game-list transaction. | `list` prints every currently available game with seller and price; the read-only command creates no transaction record. |
+| 14 | `test_14_list_no_available_games` | Cover the empty state of the game-list transaction. | With an `END`-only Available Games File, `list` reports that no games are available and creates no transaction record. |
+| 15 | `test_15_list_active_accounts` | Cover the professor-added privileged active-account listing. | Administrator lists every active account with username, user type, and available credit; the read-only command creates no transaction record. |
+| 16 | `test_16_malformed_input_recovery` | Verify graceful recovery from malformed input. | Handle blank input, unknown command, garbage token, and nonnumeric price without crashing; a later valid `create` proves recovery and writes the only non-`00` record. |
+
+## Professor-added transactions
+
+- `list` is covered by Tests 13 and 14 for populated and empty Available Games Files.
+- The privileged active-account listing is covered by administrator success in Test 15 and non-admin rejection in Test 3.
+
+The professor did not provide an exact keyword, terminal layout, or Daily Transaction File behavior for the active-account transaction. The fixtures currently assume the keyword `listaccounts`, show username, user type, and available credit, and treat the operation as read-only and unlogged. The command name, exact output layout, and unlogged behavior must be adjusted if the professor or TA provides authoritative details.

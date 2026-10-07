@@ -1,4 +1,0 @@
-Username: 
-Login successful. Welcome seller1 (sell-standard).
-Error: 'abc' is not a valid price.
-Logged out. Daily transaction file written.

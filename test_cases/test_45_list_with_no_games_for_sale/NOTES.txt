@@ -1,1 +1,0 @@
-input_available_games.txt contains only the END sentinel line.

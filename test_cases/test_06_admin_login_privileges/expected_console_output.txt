@@ -1,4 +1,0 @@
-Username: 
-Login successful. Welcome admin1 (admin).
-User 'newuser2' created successfully.
-Logged out. Daily transaction file written.

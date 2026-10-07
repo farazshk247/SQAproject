@@ -1,0 +1,14 @@
+logout
+sell
+Celeste
+12.50
+login
+ghostuser
+login
+admin1
+login
+fulluser1
+logout
+create
+newuser3
+FS

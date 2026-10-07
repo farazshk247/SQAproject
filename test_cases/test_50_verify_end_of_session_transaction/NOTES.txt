@@ -1,3 +1,0 @@
-Focused check of the terminating '00' record's exact byte layout: transaction code '00', followed by the username field blank (15 spaces), user type field blank (2 spaces), and credit field zero-filled (9 zero characters) -- i.e. the single line should read exactly:
-  "00                    000000000"
-(length 31 characters, excluding the newline).

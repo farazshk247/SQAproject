@@ -1,6 +1,0 @@
-login
-ssuser1
-buy
-Hollow_Knight
-seller1
-logout

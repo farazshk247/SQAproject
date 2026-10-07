@@ -1,4 +1,0 @@
-Username: 
-Login successful. Welcome seller1 (sell-standard).
-Error: game name exceeds 25 characters.
-Logged out. Daily transaction file written.

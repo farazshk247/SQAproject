@@ -1,1 +1,0 @@
-seller1 has Stardew_Valley and Hollow_Knight listed in input_available_games.txt; deletion must cancel further transactions on that inventory.

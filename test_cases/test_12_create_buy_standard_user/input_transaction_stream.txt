@@ -1,6 +1,0 @@
-login
-admin1
-create
-bsuser1
-BS
-logout

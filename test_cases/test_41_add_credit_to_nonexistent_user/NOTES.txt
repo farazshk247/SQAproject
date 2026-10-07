@@ -1,1 +1,0 @@
-Admin mode order per spec: amount is asked first, then the target username.

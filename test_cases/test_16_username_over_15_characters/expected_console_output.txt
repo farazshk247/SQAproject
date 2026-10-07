@@ -1,4 +1,0 @@
-Username: 
-Login successful. Welcome admin1 (admin).
-Error: username exceeds 15 characters.
-Logged out. Daily transaction file written.

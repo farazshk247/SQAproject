@@ -1,4 +1,0 @@
-Username: 
-Login successful. Welcome seller1 (sell-standard).
-Error: price exceeds maximum of $999.99.
-Logged out. Daily transaction file written.

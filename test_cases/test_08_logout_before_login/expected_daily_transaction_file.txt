@@ -1,1 +1,0 @@
-N/A -- no logout was successfully processed in this session, so no Daily Transaction File is written.

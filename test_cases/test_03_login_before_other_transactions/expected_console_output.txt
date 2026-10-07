@@ -1,4 +1,0 @@
-Error: you must login before any other transaction.
-Username: 
-Login successful. Welcome admin1 (admin).
-Logged out. Daily transaction file written.

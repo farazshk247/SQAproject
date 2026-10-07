@@ -1,1 +1,0 @@
-Standard (non-admin) accounts only supply the amount; the username in the transaction record is the logged-in user (buyer1).

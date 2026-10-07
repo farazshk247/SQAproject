@@ -1,1 +1,0 @@
-buyer1 is buy-standard (non-admin); the privileged 'create' transaction must be rejected.

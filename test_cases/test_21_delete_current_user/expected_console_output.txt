@@ -1,4 +1,0 @@
-Username: 
-Login successful. Welcome admin1 (admin).
-Error: cannot delete the currently logged in user.
-Logged out. Daily transaction file written.

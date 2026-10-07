@@ -1,0 +1,15 @@
+login
+admin1
+sell
+Celeste
+12.50
+buy
+Celeste
+admin1
+logout
+login
+buyer1
+buy
+Celeste
+admin1
+logout

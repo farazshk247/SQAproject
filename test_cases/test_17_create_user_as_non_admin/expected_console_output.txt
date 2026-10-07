@@ -1,4 +1,0 @@
-Username: 
-Login successful. Welcome fulluser1 (full-standard).
-Error: insufficient privileges for 'create'.
-Logged out. Daily transaction file written.

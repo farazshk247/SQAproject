@@ -1,6 +1,0 @@
-login
-buyer1
-create
-newuser1
-FS
-logout

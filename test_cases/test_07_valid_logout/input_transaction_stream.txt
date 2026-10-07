@@ -1,3 +1,0 @@
-login
-fulluser1
-logout

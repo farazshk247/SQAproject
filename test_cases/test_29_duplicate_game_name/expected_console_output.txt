@@ -1,4 +1,0 @@
-Username: 
-Login successful. Welcome seller1 (sell-standard).
-Error: game 'Stardew_Valley' already exists.
-Logged out. Daily transaction file written.

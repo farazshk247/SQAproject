@@ -1,9 +1,0 @@
-Username: 
-Login successful. Welcome admin1 (admin).
-User 'formatuser' created successfully.
-User 'buyer1' deleted successfully.
-Game 'TestGame' listed for sale at $25.50.
-Purchased 'Hollow_Knight' from seller1 for $10.00.
-Refund of $5.00 processed from seller1 to formatuser.
-Added $20.00 credit to formatuser's account.
-Logged out. Daily transaction file written.

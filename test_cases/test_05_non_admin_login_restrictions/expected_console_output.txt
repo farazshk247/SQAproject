@@ -1,4 +1,0 @@
-Username: 
-Login successful. Welcome buyer1 (buy-standard).
-Error: insufficient privileges for 'create'.
-Logged out. Daily transaction file written.

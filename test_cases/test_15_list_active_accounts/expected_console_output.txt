@@ -1,0 +1,8 @@
+Username: 
+Login successful. Welcome admin1 (admin).
+Active accounts:
+  admin1 - AA - $1000.00
+  fulluser1 - FS - $500.00
+  buyer1 - BS - $300.00
+  seller1 - SS - $200.00
+Logged out. Daily transaction file written.

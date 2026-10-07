@@ -1,6 +1,0 @@
-login
-buyer1
-buy
-Stardew_Valley
-seller1
-logout

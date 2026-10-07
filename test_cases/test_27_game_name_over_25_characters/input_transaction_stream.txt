@@ -1,6 +1,0 @@
-login
-seller1
-sell
-ThisGameNameIsDefinitelyWayTooLong
-10.00
-logout
