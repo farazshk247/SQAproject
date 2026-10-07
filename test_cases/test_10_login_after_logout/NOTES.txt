@@ -1,1 +1,0 @@
-Two full login/logout cycles in one run; each logout writes its own Daily Transaction File.
