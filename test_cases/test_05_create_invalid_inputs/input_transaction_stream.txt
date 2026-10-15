@@ -1,0 +1,12 @@
+login
+admin1
+create
+admin1
+FS
+create
+ThisUsernameIsWayTooLong
+FS
+create
+newuser5
+XX
+logout

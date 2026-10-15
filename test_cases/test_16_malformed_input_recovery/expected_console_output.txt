@@ -1,0 +1,8 @@
+Username: 
+Login successful. Welcome admin1 (admin).
+Error: empty input ignored.
+Error: 'frobnicate' is not a recognized transaction code.
+Error: '???' is not a recognized transaction code.
+Error: 'abc' is not a valid price.
+User 'newuser6' created successfully.
+Logged out. Daily transaction file written.

@@ -1,0 +1,15 @@
+login
+admin1
+create
+fsuser1
+FS
+create
+bsuser1
+BS
+create
+ssuser1
+SS
+create
+admin2
+AA
+logout

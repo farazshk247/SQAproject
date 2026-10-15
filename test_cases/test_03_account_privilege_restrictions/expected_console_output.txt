@@ -1,0 +1,11 @@
+Username: 
+Login successful. Welcome admin1 (admin).
+User 'newuser2' created successfully.
+Logged out. Daily transaction file written.
+Username: 
+Login successful. Welcome fulluser1 (full-standard).
+Error: insufficient privileges for 'create'.
+Error: insufficient privileges for 'delete'.
+Error: insufficient privileges for 'refund'.
+Error: insufficient privileges for 'listaccounts'.
+Logged out. Daily transaction file written.

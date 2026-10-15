@@ -1,0 +1,6 @@
+Username: 
+Login successful. Welcome admin1 (admin).
+Error: username 'admin1' already exists.
+Error: username exceeds 15 characters.
+Error: invalid user type 'XX'.
+Logged out. Daily transaction file written.
