@@ -1,7 +1,0 @@
-Username: 
-Login successful. Welcome admin1 (admin).
-User 'fsuser1' created successfully.
-User 'bsuser1' created successfully.
-User 'ssuser1' created successfully.
-User 'admin2' created successfully.
-Logged out. Daily transaction file written.
