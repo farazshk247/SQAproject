@@ -1,0 +1,6 @@
+Username: 
+Login successful. Welcome admin1 (admin).
+User 'seller1' deleted successfully. Associated games for sale removed.
+User 'arkadmin' deleted successfully. Associated games for sale removed.
+No games currently available for sale.
+Logged out. Daily transaction file written.

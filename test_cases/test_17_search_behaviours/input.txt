@@ -1,0 +1,12 @@
+login
+buyer1
+search
+ark
+search
+zzz
+logout
+login
+admin1
+search
+ark
+logout

@@ -1,0 +1,14 @@
+login
+admin1
+delete
+fulluser1
+delete
+ghostuser
+delete
+admin1
+delete
+seller1
+buy
+Stardew_Valley
+seller1
+logout

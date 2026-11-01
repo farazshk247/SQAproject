@@ -1,0 +1,6 @@
+Username: 
+Login successful. Welcome admin1 (admin).
+Refund of $10.00 processed from seller1 to buyer1.
+Error: buyer 'ghostbuyer' does not exist.
+Error: seller 'ghostseller' does not exist.
+Logged out. Daily transaction file written.
