@@ -9,6 +9,7 @@
 #include "LoginTransaction.h"
 #include "LogoutTransaction.h"
 #include "RefundTransaction.h"
+#include "SearchTransaction.h"
 #include "SellTransaction.h"
 
 Transaction* TransactionFactory::createTransaction(std::string command) {
@@ -41,6 +42,9 @@ Transaction* TransactionFactory::createTransaction(std::string command) {
     }
     if (command == "listaccounts") {
         return new ListAccountsTransaction();
+    }
+    if (command == "search") {
+        return new SearchTransaction();
     }
 
     return nullptr;

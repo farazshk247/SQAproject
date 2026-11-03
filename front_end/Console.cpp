@@ -58,3 +58,27 @@ void Console::showAccountList(std::vector<User> users) {
                   << std::setprecision(2) << user.getCredit() << '\n';
     }
 }
+
+void Console::showSearchResults(
+    std::string term, std::vector<Game> games,
+    std::vector<std::string> usernames) {
+    showMessage("Search results for '" + term + "':");
+
+    showMessage("Games:");
+    if (games.empty()) {
+        showMessage("  (none)");
+    }
+    for (Game& game : games) {
+        std::cout << "  " << game.getName() << " - " << game.getSeller()
+                  << " - $" << std::fixed << std::setprecision(2)
+                  << game.getPrice() << '\n';
+    }
+
+    showMessage("Users:");
+    if (usernames.empty()) {
+        showMessage("  (none)");
+    }
+    for (const std::string& name : usernames) {
+        showMessage("  " + name);
+    }
+}

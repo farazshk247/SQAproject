@@ -46,8 +46,10 @@ void DailyTransactionWriter::writeCreate(User user) {
 }
 
 void DailyTransactionWriter::writeDelete(User user) {
-    out << "02 " << std::left << std::setw(18) << user.getUsername()
-        << " 000000000\n";
+    out << "02 " << std::left << std::setw(15) << user.getUsername() << ' '
+        << userTypeText(user.getType()) << ' ';
+    writeMoney(out, user.getCredit(), 9);
+    out << '\n';
 }
 
 void DailyTransactionWriter::writeSell(Game game) {
@@ -74,7 +76,8 @@ void DailyTransactionWriter::writeRefund(
 }
 
 void DailyTransactionWriter::writeAddCredit(User user) {
-    out << "06 " << std::left << std::setw(18) << user.getUsername() << ' ';
+    out << "06 " << std::left << std::setw(15) << user.getUsername() << ' '
+        << userTypeText(user.getType()) << ' ';
     writeMoney(out, user.getCredit(), 9);
     out << '\n';
 }
