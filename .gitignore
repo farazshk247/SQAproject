@@ -6,3 +6,7 @@
 .idea/
 *.tmp
 *.log
+front_end/frontend
+results/run_*/
+results/latest
+phase3_fixes.patch
