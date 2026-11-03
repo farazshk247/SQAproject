@@ -45,12 +45,14 @@ void DailyTransactionWriter::writeCreate(User user) {
     out << '\n';
 }
 
+
 void DailyTransactionWriter::writeDelete(User user) {
     out << "02 " << std::left << std::setw(15) << user.getUsername() << ' '
         << userTypeText(user.getType()) << ' ';
     writeMoney(out, user.getCredit(), 9);
     out << '\n';
 }
+
 
 void DailyTransactionWriter::writeSell(Game game) {
     out << "03 " << std::left << std::setw(25) << game.getName() << ' '
@@ -75,12 +77,14 @@ void DailyTransactionWriter::writeRefund(
     out << '\n';
 }
 
+
 void DailyTransactionWriter::writeAddCredit(User user) {
     out << "06 " << std::left << std::setw(15) << user.getUsername() << ' '
         << userTypeText(user.getType()) << ' ';
     writeMoney(out, user.getCredit(), 9);
     out << '\n';
 }
+
 
 void DailyTransactionWriter::close() {
     if (out.is_open()) {

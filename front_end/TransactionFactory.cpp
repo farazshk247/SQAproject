@@ -11,6 +11,7 @@
 #include "RefundTransaction.h"
 #include "SearchTransaction.h"
 #include "SellTransaction.h"
+#include "SearchTransaction.h"
 
 Transaction* TransactionFactory::createTransaction(std::string command) {
     if (command == "login") {

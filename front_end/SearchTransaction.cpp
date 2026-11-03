@@ -1,20 +1,10 @@
+
 #include "SearchTransaction.h"
 
-#include <algorithm>
-#include <cctype>
+#include <iostream>
+#include <string>
 #include <vector>
-
-namespace {
-std::string toLower(std::string text) {
-    std::transform(text.begin(), text.end(), text.begin(),
-                   [](unsigned char c) { return std::tolower(c); });
-    return text;
-}
-
-bool contains(const std::string& text, const std::string& lowerTerm) {
-    return toLower(text).find(lowerTerm) != std::string::npos;
-}
-}
+#include <iomanip>
 
 SearchTransaction::SearchTransaction() {
     code = "search";
@@ -25,50 +15,69 @@ bool SearchTransaction::execute(FrontEndContext& ctx) {
         return false;
     }
 
-    std::string term;
-    if (!ctx.console.readLine(term)) {
+    std::string query;
+    if (!ctx.console.readLine(query)) {
         return false;
     }
-    if (term.empty()) {
-        ctx.console.showError("search term cannot be empty.");
-        return false;
-    }
-
-    const std::string lowerTerm = toLower(term);
-    const std::vector<Game> available = ctx.games.getAvailable();
 
     std::vector<Game> matchingGames;
-    for (Game game : available) {
-        if (contains(game.getName(), lowerTerm)) {
+    std::vector<User> matchingUsers;
+
+    // Find games containing the search query.
+    for (Game game : ctx.games.getAvailable()) {
+        if (game.getName().find(query) != std::string::npos) {
             matchingGames.push_back(game);
         }
     }
 
-    // Admins see every matching user. Everyone else only sees an admin
-    // account when that admin has a game for sale.
-    const bool viewerIsAdmin = ctx.session.isAdmin();
-    std::vector<std::string> matchingUsers;
+    // Find users containing the search query.
     for (User user : ctx.accounts.getAllUsers()) {
-        if (!contains(user.getUsername(), lowerTerm)) {
+        if (user.getUsername().find(query) == std::string::npos) {
             continue;
         }
 
-        if (user.isAdmin() && !viewerIsAdmin) {
-            bool sellsAGame = false;
-            for (Game game : available) {
+        // Hide admins who are not selling games from non-admin users.
+        if (!ctx.session.isAdmin() && user.isAdmin()) {
+            bool isSelling = false;
+
+            for (Game game : ctx.games.getAvailable()) {
                 if (game.getSeller() == user.getUsername()) {
-                    sellsAGame = true;
+                    isSelling = true;
                     break;
                 }
             }
-            if (!sellsAGame) {
+
+            if (!isSelling) {
                 continue;
             }
         }
 
-        matchingUsers.push_back(user.getUsername());
+        matchingUsers.push_back(user);
     }
 
-    ctx.console.showSearchResults(term, matchingGames, matchingUsers);
+    std::cout << "Search results for '" << query << "':\n";
+    std::cout << "Games:\n";
+    
+    if (matchingGames.empty()) {
+        std::cout << "  (none)\n";
+    } else {
+        for (Game game : matchingGames) {
+            std::cout << "  " << game.getName()
+                    << " - " << game.getSeller()
+                    << " - $" << std::fixed << std::setprecision(2)
+                    << game.getPrice() << "\n";
+        }
+    }
+
+    std::cout << "Users:\n";
+
+    if (matchingUsers.empty()) {
+        std::cout << "  (none)\n";
+    } else {
+        for (User user : matchingUsers) {
+            std::cout << "  " << user.getUsername() << "\n";
+        }
+    }
+
     return true;
 }
