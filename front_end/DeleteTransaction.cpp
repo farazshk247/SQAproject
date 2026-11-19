@@ -53,6 +53,12 @@ bool DeleteTransaction::validateTarget(
         return false;
     }
 
+    // Account managers are not allowed to delete admin accounts.
+    if (!ctx.session.isAdmin() && ctx.accounts.findUser(username)->isAdmin()) {
+        ctx.console.showError("account managers cannot delete admin accounts.");
+        return false;
+    }
+
     return true;
 }
 
