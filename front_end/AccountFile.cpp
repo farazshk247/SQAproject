@@ -24,6 +24,8 @@ bool parseUserType(const std::string& text, UserType& type) {
         type = UserType::BS;
     } else if (text == "SS") {
         type = UserType::SS;
+    } else if (text == "AM") {
+        type = UserType::AM;
     } else {
         return false;
     }

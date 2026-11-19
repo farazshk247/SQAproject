@@ -13,6 +13,9 @@ UserType parseUserType(const std::string& type) {
     if (type == "SS") {
         return UserType::SS;
     }
+    if (type == "AM") {
+        return UserType::AM;
+    }
 
     return UserType::AA;
 }
@@ -68,6 +71,12 @@ bool CreateTransaction::validateNewUser(
 
     if (!InputValidator::isValidUserType(type)) {
         ctx.console.showError("invalid user type '" + type + "'.");
+        return false;
+    }
+
+    // Account managers are not allowed to create admin accounts.
+    if (!ctx.session.isAdmin() && type == "AA") {
+        ctx.console.showError("account managers cannot create admin accounts.");
         return false;
     }
 

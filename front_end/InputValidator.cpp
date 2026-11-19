@@ -19,7 +19,8 @@ bool InputValidator::isValidUsername(std::string name) {
 }
 
 bool InputValidator::isValidUserType(std::string type) {
-    return type == "AA" || type == "FS" || type == "BS" || type == "SS";
+    return type == "AA" || type == "FS" || type == "BS" || type == "SS" ||
+           type == "AM";
 }
 
 bool InputValidator::isValidGameName(std::string name) {
