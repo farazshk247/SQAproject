@@ -1,0 +1,26 @@
+Username: 
+Login successful. Welcome buyer1 (buy-standard).
+Search results for 'ark':
+Games:
+  Darkest_Dungeon - seller1 - $25.00
+  Dark_Souls - arkadmin - $40.00
+Users:
+  markbuyer
+  arkadmin
+Search results for 'zzz':
+Games:
+  (none)
+Users:
+  (none)
+Logged out. Daily transaction file written.
+Username: 
+Login successful. Welcome admin1 (admin).
+Search results for 'ark':
+Games:
+  Darkest_Dungeon - seller1 - $25.00
+  Dark_Souls - arkadmin - $40.00
+Users:
+  markbuyer
+  arkadmin
+  parkadmin
+Logged out. Daily transaction file written.

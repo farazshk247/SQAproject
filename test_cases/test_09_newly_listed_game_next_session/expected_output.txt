@@ -1,0 +1,9 @@
+Username: 
+Login successful. Welcome admin1 (admin).
+Game 'Celeste' listed for sale at $12.50.
+Error: game 'Celeste' is not available until the next session.
+Logged out. Daily transaction file written.
+Username: 
+Login successful. Welcome buyer1 (buy-standard).
+Purchased 'Celeste' from admin1 for $12.50.
+Logged out. Daily transaction file written.

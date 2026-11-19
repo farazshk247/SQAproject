@@ -1,0 +1,8 @@
+Username: 
+Login successful. Welcome buyer1 (buy-standard).
+Available games:
+  Stardew_Valley - seller1 - $15.00
+  Hollow_Knight - seller1 - $10.00
+  Darkest_Dungeon - seller1 - $25.00
+  Dark_Souls - arkadmin - $40.00
+Logged out. Daily transaction file written.

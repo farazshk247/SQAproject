@@ -1,0 +1,9 @@
+Error: not logged in. Logout ignored.
+Error: you must login before any other transaction.
+Username: 
+Error: invalid username. Login failed.
+Username: 
+Login successful. Welcome admin1 (admin).
+Error: already logged in. Login ignored.
+Logged out. Daily transaction file written.
+Error: you must login before any other transaction.

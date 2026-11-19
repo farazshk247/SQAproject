@@ -1,0 +1,8 @@
+login
+admin1
+delete
+seller1
+delete
+arkadmin
+list
+logout
