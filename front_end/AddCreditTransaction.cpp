@@ -36,7 +36,7 @@ bool AddCreditTransaction::execute(FrontEndContext& ctx) {
 
     std::string targetUsername =
         ctx.session.getCurrentUser()->getUsername();
-    if (ctx.session.isAdmin()) {
+    if (ctx.session.hasAdminPrivileges()) {
         if (!ctx.console.readLine(targetUsername)) {
             return false;
         }
@@ -61,7 +61,7 @@ bool AddCreditTransaction::execute(FrontEndContext& ctx) {
     User transactionEntry(target->getUsername(), target->getType(), amount);
     ctx.writer.writeAddCredit(transactionEntry);
 
-    if (ctx.session.isAdmin()) {
+    if (ctx.session.hasAdminPrivileges()) {
         ctx.console.showMessage(
             "Added $" + formatMoney(amount) + " credit to " +
             targetUsername + "'s account.");
