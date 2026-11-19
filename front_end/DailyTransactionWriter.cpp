@@ -13,6 +13,8 @@ std::string userTypeText(UserType type) {
             return "BS";
         case UserType::SS:
             return "SS";
+        case UserType::AM:
+            return "AM";
     }
 
     return "";
