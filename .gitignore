@@ -10,3 +10,6 @@ front_end/frontend
 results/run_*/
 results/latest
 phase3_fixes.patch
+__pycache__/
+*.pyc
+frontend_phase4_linux
